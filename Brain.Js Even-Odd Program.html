@@ -55,6 +55,7 @@ function predict() {
 			Txt = "Odd";
 		output += "<tr><td>" + i + "</td><td>" + result + "</td><td>" + Txt + "</td></tr>";
 	}
+	//print output in table format for better visuallization
 	document.getElementById("output").innerHTML = "<table border='1' cellpadding='5' align='center'> <tr> <th>Number</th> <th>Predicted Value</th> <th>Prediction</th> </tr>" + output + "</table>";
 }
 
@@ -69,9 +70,9 @@ function dBinary(Num) //convert Number into binary array for neuron network mode
 }
       </Script>
 	<ul>
-		<li>Minimun no. of Nueron must be 3 due to traing dataset.</li>
-		<li>Observe Even-Odd predict table after changing Nueron count. Eg. 2^3=16, 2^4=32, 2^5=64, 2^6=128, etc.</li>
-		<li>Predication fails when you go beyond nueron limit (2^x). Solution is to incease nueron count.</li>
+		<li>Minimun no. of Neuron must be 3 due to training dataset.</li>
+		<li>Observe Even-Odd predict table after changing Neuron count. Eg. 2^3+1=16, 2^4+1=32, 2^5+1=64, 2^6+1=128, etc.</li>
+		<li>Predication fails when you go beyond neuron limit (2^x+1). Solution is to incease nueron count.</li>
 	</ul>
    </Body>
 </Html>
