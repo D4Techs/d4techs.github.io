@@ -1,14 +1,18 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.matrics import mean_squared_error
 
-df = pd.read_csv("http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data")
+iris = pd.read_csv("http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data")
+
+x = iris["Sepal.Length"]
+y = iris["Sepal.Width"]
 
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3)
 lr = LinearRegression()
 lr.fit(x_train , y_train)
 y_predict = lr.predict(x_test)
-from sklearn.matrics import mean_squared_error
+
 mean_squared_error(y_test, y_predict)
