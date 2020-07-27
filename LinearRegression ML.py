@@ -13,6 +13,6 @@ y = iris.iloc[1]
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3)
 lr = LinearRegression()
 lr.fit(x_train , y_train)
-y_predict = lr.predict(x_test)
+y_predict = lr.predict(y_test)
 
 print( mean_squared_error(y_test, y_predict) )
