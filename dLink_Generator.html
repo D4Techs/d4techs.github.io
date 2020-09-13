@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>dGenerateLink - D4Techs</title>
+</head>
+
+<body>
+	<span id="dLink">Generated Link will be here</span>
+
+<script type="text/javascript">
+	var dLink = document.getElementById("dLink");
+
+	var dLinkList = [
+		"https://www.google.com/search?q=GamesFriendly71+YouTube",
+		"https://www.facebook.com/GamesFriendly71",
+		"https://twitter.com/GamesFriendly71",
+		"https://www.youtube.com/c/GamesFriendly71",
+		"https://www.youtube.com/watch?v=gTMAiWcF3aM",
+		"https://www.youtube.com/watch?v=j51OhQ1Wmrg",
+		"https://www.youtube.com/watch?v=bbaO2vDvn88",
+		"https://www.youtube.com/watch?v=5Y0Ycoxn3ys",
+		"https://www.youtube.com/watch?v=k30NNEh4rkY",
+		"https://www.youtube.com/watch?v=IZA4axbqNt8",
+		"https://www.youtube.com/watch?v=L3IqmCpwKHw",
+		"https://www.youtube.com/watch?v=f4ca9sJ4z_w",
+		"https://www.youtube.com/watch?v=FE_Vv4BgFYI",
+		"https://www.youtube.com/watch?v=ORFJfiXzQXA",
+		"https://www.youtube.com/watch?v=ucgEFVNVYYk",
+		"https://www.youtube.com/watch?v=CmW3G2jg7vY",
+		"https://www.youtube.com/watch?v=H7trzsz8vSU",
+		"https://www.youtube.com/watch?v=UYmIKTA4qlk",
+		"https://www.youtube.com/watch?v=nH2NicTf5qM",
+		"https://www.youtube.com/watch?v=H1-8fCMkxME",
+		"https://www.youtube.com/watch?v=_e_5JQoy1Ow",
+		"https://www.youtube.com/watch?v=0BzOXqvcbgQ",
+		"https://www.youtube.com/watch?v=K53zHtczS5I",
+		"https://www.youtube.com/watch?v=daeEB-6nMGw",
+		"https://www.youtube.com/watch?v=4wQ0qNry6sQ",
+		"https://www.youtube.com/watch?v=972mkw4SP7Y",
+		"https://www.youtube.com/watch?v=cTUJ6aQmKu8",
+		"https://www.youtube.com/watch?v=199dUOnrY94",
+		"https://www.youtube.com/watch?v=GbQuliy_6uY",
+		"https://www.youtube.com/watch?v=58T2Mnj7tEY",
+		"https://www.youtube.com/watch?v=Skqm6snLW_Q",
+		"https://www.youtube.com/watch?v=1TvqIGsrqq4",
+		"https://www.youtube.com/watch?v=cW0psstEbsI",
+		"https://www.youtube.com/watch?v=FtX2ovbFXZs",
+		"https://www.youtube.com/watch?v=479BfqEoOMc",
+		"https://www.youtube.com/watch?v=U1kgwnN4HLQ",
+		"https://www.youtube.com/watch?v=_aA5GDahUVU",
+		"https://www.youtube.com/watch?v=iTdU27n3Bvc",
+		"https://www.youtube.com/watch?v=QS2ZPzFCP9E",
+		"https://www.youtube.com/watch?v=UauP5v5IoLI",
+		"https://www.youtube.com/watch?v=FcCV8p2ml_w",
+		"https://www.youtube.com/watch?v=zxW9pwsxezg",
+		"https://www.youtube.com/watch?v=2G1INL_wdFU",
+		"https://www.youtube.com/watch?v=vF0vRHKPIdk",
+		"https://www.youtube.com/watch?v=Uo7mQ5Zr218",
+		"https://www.youtube.com/watch?v=NO77sZs0wjI",
+		"https://www.youtube.com/watch?v=oIgSiSkkVZ0",
+		"https://www.youtube.com/watch?v=C_JkvHh-BOQ",
+		"https://www.youtube.com/watch?v=LYU3iwxE8Vw",
+		"https://www.youtube.com/watch?v=cM54MT8gq-c",
+		"https://www.youtube.com/watch?v=_-5RCAYZ8Nw",
+		"https://www.youtube.com/watch?v=NLI_kwEyzfA"
+
+			];
+
+
+	var minLen = 2;
+	var maxLen = dLinkList.length -1; //ArrayIndex = length -1
+	
+	//Pick random link from list & put in dLink
+	window.location.href = dLinkList[ Math.floor(Math.random() * (maxLen - minLen + 1) ) + minLen ];
+
+</script>
+
+</body>
+</html>
